@@ -1,25 +1,25 @@
-/*const output = document.querySelector("#output");
-const Gbtn = document.querySelector(".Gbtn");
+const counter = document.querySelectorAll(".counter");
+let counterArr = Array.from(counter);
 
-function isString(value) {
-  return value.constructor === String;
-}
-
-Gbtn.addEventListener("click", function () {
-  if (isString(output.value)) {
-    console.log("this is string");
-  } else {
-    console.log("this is number");
+/*let count = 0;
+let stop = setInterval(() => {
+  count++;
+  console.log(count);
+  if (count >= 10) {
+    clearInterval(stop);
   }
-});*
-const output = document.querySelector("#output");
-const Gbtn = document.querySelector(".Gbtn");
-
-Gbtn.addEventListener("click", function () {
-  if (isNaN(output.value)) {
-    console.log("string");
-  } else {
-    console.log("number");
+}, 1000);*
+counterArr.map((e) => {
+  let counterValue = e.innerHTML;
+  let count = 0;
+  function counterUp() {
+    e.terget.value = count;
+    count++;
   }
+  const stop = setInterval(() => {
+    if (count >= counterValue) {
+      clearInterval(stop);
+    }
+    counterUp();
+  }, 100000);
 });
-*/

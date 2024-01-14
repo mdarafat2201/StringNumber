@@ -2,13 +2,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-#output {
-  padding: 10px 20px;
-}
-.Gbtn {
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-}
+ 
